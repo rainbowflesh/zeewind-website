@@ -1,4 +1,4 @@
-import { Button, Dropdown, Menu, Navbar } from "react-daisyui";
+import { Button, Menu, Navbar } from "react-daisyui";
 import { useTranslation } from "react-i18next";
 
 export const NavigationBar = () => {
@@ -55,7 +55,16 @@ export const NavigationBar = () => {
               strokeWidth={2}
               d="M5 12h.01M12 12h.01M19 12h.01M6 12a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0zm7 0a1 1 0 11-2 0 1 1 0 012 0z"
             />
-          </svg>
+          </svg>{" "}
+          <Dropdown {...args} dataTheme={dataTheme}>
+            <Dropdown.Toggle className="btn btn-ghost rounded-btn" button={false}>
+              Dropdown
+            </Dropdown.Toggle>
+            <Dropdown.Menu className="w-52 mt-4">
+              <Dropdown.Item>Item 1</Dropdown.Item>
+              <Dropdown.Item>Item 2</Dropdown.Item>
+            </Dropdown.Menu>
+          </Dropdown>
         </Button>
       </Navbar.End>
     </Navbar>
