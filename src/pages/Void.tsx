@@ -1,3 +1,3 @@
 export const Void = () => {
-  return <></>;
+  return <>into the void</>;
 };

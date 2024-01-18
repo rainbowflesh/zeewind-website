@@ -1,0 +1,19 @@
+{
+  "title": {
+    "company_name_full": "Peking KwanYie Tech Inc.",
+    "company_name_short": "Peking KwanYie",
+    "products_name_full": "Advanced Airspace Security Solution",
+    "products": "Products",
+    "services": "Services",
+    "supports": "Supports"
+  },
+  "products": {
+    "recon_module": "Reconnaissance Modules",
+    "drone": "Drones",
+    "arm01": "ARM-01 Flying-Fish",
+    "test": "test placeholder"
+  },
+  "services": {},
+  "header": {},
+  "footer": {}
+}
