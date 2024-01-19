@@ -1,8 +1,9 @@
 import { useState } from "react";
 import { Button, Dropdown, Menu, Navbar } from "react-daisyui";
 import { useTranslation } from "react-i18next";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { I18nMenu } from "./I18nMenu";
+import { ThemeMenu } from "./ThemeMenu";
 
 export const NavigationBar = () => {
   const { t } = useTranslation();
@@ -20,20 +21,24 @@ export const NavigationBar = () => {
       setOpenProductMenu(false);
     }, 600);
   };
-
+  const navigate = useNavigate();
   return (
     <Navbar className="line-background px-2 font-sans bg-base-300 rounded-box border-2 mx-auto max-w-screen-xl sm:px-6 lg:px-8 h-4">
       <Navbar.Start className="flex flex-wrap md:flex-wrap-reverse truncate">
-        <Button tag="a" className="text-xl normal-case md:flex md:items-center" color="ghost" href="/">
-          <img src="/favicon.svg" className="size-8" />
-          <div>
-            <span className="text-left">{t("string.company_name_short")}</span>
-            <span
-              className="text-left text-sm font-light ml-1 -mt
-            -2 block"
-            >
-              {t("string.company_slogan")}
-            </span>
+        <Button
+          tag="a"
+          className="text-xl normal-case md:flex md:items-center"
+          color="ghost"
+          onClick={() => {
+            navigate("/");
+          }}
+        >
+          <a href="/">
+            <img src="/favicon.svg" className="size-12" />
+          </a>
+          <div className="flex flex-col ml-1">
+            <span className={"self-start"}>{t("string.company_name_short")}</span>
+            <span className="text-sm font-light block -mt-1">{t("string.company_slogan")}</span>
           </div>
         </Button>
       </Navbar.Start>
@@ -47,12 +52,14 @@ export const NavigationBar = () => {
             >
               <details open={isProductMenuOpen}>
                 <summary>{t("string.products")}</summary>
-                <ul className="bg-slate-50">
+                <ul id="navbar-dropdown1" className="bg-slate-50">
                   <li>
                     {t("string.recon_module")}
                     <ul>
                       <li>
-                        <Link to={"products/rce1u"}>{t("products.rce1u")}</Link>
+                        <Link className="text-lg" to={"products/rce1u"}>
+                          {t("products.rce1u")}
+                        </Link>
                       </li>
                     </ul>
                   </li>
@@ -62,13 +69,25 @@ export const NavigationBar = () => {
           </Menu>
           <Menu horizontal={true}>
             <Menu.Item className="relative">
-              <a className="ghost rounded">{t("string.services")}</a>
+              <a className="ghost rounded">{t("string.consults")}</a>
+            </Menu.Item>
+            <Menu.Item className="relative">
+              <a className="ghost rounded">{t("string.contact")}</a>
+            </Menu.Item>
+            <Menu.Item className="relative">
+              <a className="ghost rounded">{t("string.about")}</a>
             </Menu.Item>
           </Menu>
         </div>
       </Navbar.Center>
       <Navbar.End className="z-50">
-        <I18nMenu />
+        <div className="mr-4">
+          <I18nMenu />
+        </div>
+        <div className="mr-2">
+          <ThemeMenu />
+        </div>
+
         <Dropdown className="flex items-center gap-4">
           <div className="block md:hidden">
             <Dropdown.Toggle className="btn btn-ghost rounded-btn" button={false}>
@@ -86,8 +105,20 @@ export const NavigationBar = () => {
               </button>
             </Dropdown.Toggle>
             <Dropdown.Menu className="w-52 mt-2 -ml-32">
-              <Dropdown.Item>Products</Dropdown.Item>
-              <Dropdown.Item>Services</Dropdown.Item>
+              <Dropdown.Item
+                onClick={() => {
+                  navigate("products");
+                }}
+              >
+                {t("string.products")}
+              </Dropdown.Item>
+              <Dropdown.Item
+                onClick={() => {
+                  navigate("services");
+                }}
+              >
+                {t("string.services")}
+              </Dropdown.Item>
             </Dropdown.Menu>
           </div>
         </Dropdown>

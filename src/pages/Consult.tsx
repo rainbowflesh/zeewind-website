@@ -1,6 +1,6 @@
 import { Hero } from "react-daisyui";
 
-export const Contact = () => {
+export const Consult = () => {
   return (
     <Hero>
       <Hero.Content className="text-center">

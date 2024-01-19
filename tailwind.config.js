@@ -22,6 +22,22 @@ export default {
         "14/15": "94%",
       },
     },
+    fontFamily: {
+      sans: ["Figtree"],
+      serif: ["Figtree"],
+      mono: ["Space Mono"],
+      display: ["Figtree"],
+      body: ["Figtree"],
+    },
   },
   plugins: [require("daisyui")],
+  daisyui: {
+    themes: ["corporate", "business"],
+    darkTheme: "business",
+    base: true,
+    styled: true,
+    utils: true,
+    prefix: "",
+    themeRoot: ":root",
+  },
 };

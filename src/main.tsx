@@ -1,19 +1,23 @@
+import "./index.css";
+// deps
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { initReactI18next } from "react-i18next";
-import { NavigationBar } from "./components/NavigationBar";
-import Backend from "i18next-http-backend";
 import i18n from "i18next";
-import LanguageDetector from "i18next-browser-languagedetector";
 import React from "react";
 import ReactDOM from "react-dom/client";
-
-import { Home } from "./pages/Home";
-import { Void } from "./pages/Void";
-import { ProductIndex } from "./pages/products/ProductIndex";
-import { RCE1U } from "./pages/products/rce1u";
-
-import "./index.css";
+import Backend from "i18next-http-backend";
+import LanguageDetector from "i18next-browser-languagedetector";
+// components
+import { NavigationBar } from "./components/NavigationBar";
 import { FooterBar } from "./components/Footer";
+// pages
+import { About } from "./pages/About";
+import { Consult } from "./pages/Consult";
+import { Home } from "./pages/Home";
+import { ProductIndex } from "./pages/Product";
+import { RCE1U } from "./pages/products/rce1u";
+import { Services } from "./pages/Service";
+import { Void } from "./pages/Void";
 
 i18n
   .use(Backend)
@@ -34,6 +38,9 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
       <Routes>
         <Route path="/" element={<Home />}></Route>
         <Route path="/products" element={<ProductIndex />}></Route>
+        <Route path="/services" element={<Services />}></Route>
+        <Route path="/consult" element={<Consult />}></Route>
+        <Route path="/about" element={<About />}></Route>
         <Route path="/products/rce1u" element={<RCE1U />}></Route>
         <Route path="*" element={<Void />}></Route>
       </Routes>
