@@ -25,22 +25,15 @@ export const NavigationBar = () => {
   return (
     <Navbar className="line-background px-2 font-sans bg-base-300 rounded-box border-2 mx-auto max-w-screen-xl sm:px-6 lg:px-8 h-4">
       <Navbar.Start className="flex flex-wrap md:flex-wrap-reverse truncate">
-        <Button
-          tag="a"
-          className="text-xl normal-case md:flex md:items-center"
-          color="ghost"
-          onClick={() => {
-            navigate("/");
-          }}
-        >
-          <a href="/">
+        <Link to="/">
+          <Button className="text-xl normal-case md:flex md:items-center" color="ghost">
             <img src="/favicon.svg" className="size-12" />
-          </a>
-          <div className="flex flex-col ml-1">
-            <span className={"self-start"}>{t("string.company_name_short")}</span>
-            <span className="text-sm font-light block -mt-1">{t("string.company_slogan")}</span>
-          </div>
-        </Button>
+            <div className="flex flex-col ml-1">
+              <span className={"self-start"}>{t("string.company_name_short")}</span>
+              <span className="text-sm font-light block -mt-1">{t("string.company_slogan")}</span>
+            </div>
+          </Button>
+        </Link>
       </Navbar.Start>
       <Navbar.Center className="flex  flex-wrap md:flex-wrap-reverse h-16 items-center justify-between  z-50">
         <div className="hidden md:block" aria-label="Global">
@@ -69,13 +62,17 @@ export const NavigationBar = () => {
           </Menu>
           <Menu horizontal={true}>
             <Menu.Item className="relative">
-              <a className="ghost rounded">{t("string.consults")}</a>
+              <Link to={"/consult"}>{t("string.consult")}</Link>
             </Menu.Item>
             <Menu.Item className="relative">
-              <a className="ghost rounded">{t("string.contact")}</a>
+              <Link to={"/contact"} className="ghost rounded">
+                {t("string.contact")}
+              </Link>
             </Menu.Item>
             <Menu.Item className="relative">
-              <a className="ghost rounded">{t("string.about")}</a>
+              <Link to={"/about"} className="ghost rounded">
+                {t("string.about")}
+              </Link>
             </Menu.Item>
           </Menu>
         </div>
