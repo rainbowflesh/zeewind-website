@@ -26,8 +26,8 @@ export const NavigationBar = () => {
     <Navbar className="line-background px-2 font-sans bg-base-300 rounded-box border-2 mx-auto max-w-screen-xl sm:px-6 lg:px-8 h-4">
       <Navbar.Start className="flex flex-wrap md:flex-wrap-reverse truncate">
         <Link to="/">
-          <Button className="text-xl normal-case md:flex md:items-center" color="ghost">
-            <img src="/favicon.svg" className="size-12" />
+          <Button className="text-xl text-left normal-case md:flex md:items-center" color="ghost">
+            <img src="/favicon.svg" className="size-12 left-1 mr-auto text-left " />
             <div className="flex flex-col ml-1">
               <span className={"self-start"}>{t("string.company_name_short")}</span>
               <span className="text-sm font-light block -mt-1">{t("string.company_slogan")}</span>

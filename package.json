@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "css": "tailwind -i ./src/index.css -o ./src/baked.css",
     "lint": "tsc ",
     "preview": "vite preview"
   },

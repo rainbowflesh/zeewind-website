@@ -1,3 +1,4 @@
+import "./tailwind.css";
 import "./index.css";
 // deps
 import { BrowserRouter } from "react-router-dom";
@@ -18,7 +19,6 @@ i18n
   .use(initReactI18next)
   .init({
     fallbackLng: "en",
-    debug: true,
     interpolation: {
       escapeValue: false,
     },

@@ -1,14 +1,14 @@
-import { Button, Carousel, Hero, useTheme } from "react-daisyui";
+import { Button, Carousel, Hero } from "react-daisyui";
 import { useTranslation } from "react-i18next";
 
 export const Home = () => {
   const { t } = useTranslation();
 
   return (
-    <Hero className="dot-background">
-      <Hero.Content className="text-center">
+    <Hero className="dot-background dark:dot-background-dark">
+      <Hero.Content className="text-center flex flex-col sm:flex-row">
         <Carousel
-          className="rounded-box max-w-10/12 max-h-10/12 min-w-1/5 snap-center place-items-center   "
+          className="rounded-box w-full sm:w-2/3 max-w-10/12 snap-center place-items-center"
           display="sequential"
           snap="center"
           buttonStyle={(value) => {
@@ -22,10 +22,13 @@ export const Home = () => {
           <Carousel.Item alt="new-showcase" src="images/placeholder_KalebKendall.jpg" />
           <Carousel.Item alt="new-showcase" src="images/skye-studios-rjmSbF6TQvQ-unsplash.jpg" />
         </Carousel>
-        <div className="max-w-md">
+        <div className="w-full sm:w-1/3">
           <article className="text-wrap">
             <h1 className="text-5xl font-bold">{t("string.greeting")}</h1>
-            <p id="company-introduce" className="company-introduce py-6 bg-slate-50 rounded-box mt-2 mb-2 text-balance">
+            <p
+              id="company-introduce"
+              className="company-introduce py-6 bg-slate-50 dark:bg-slate-800 rounded-box mt-2 mb-2 text-balance"
+            >
               {t("string.company_introduce")}
             </p>
           </article>
