@@ -1,19 +1,28 @@
 {
-  "title": {
-    "company_name_full": "Peking KwanYie Tech Inc.",
-    "company_name_short": "Peking KwanYie",
-    "products_name_full": "Advanced Airspace Security Solution",
+  "string": {
+    "404": "Into the Void",
+    "404return": "Back to Future",
+    "about": "About Us",
+    "buy_now": "Buy Now",
+    "company_introduce": "ZEEWIND is a company dedicated to the develop and production of unmanned aerial vehicle detection and countermeasure equipment, aka CUAS devices. ZEEWIND provide professional airspace security solutions, in addition, we offer industry-specific consulting services to help clients understand and meet their professional needs.",
+    "company_name_full": "深圳市智影达科技有限公司",
+    "company_name_short": "ZEEWIND",
+    "company_slogan": "Advanced Airspace Security Solution",
+    "consults": "Consults",
+    "contact": "Contact Us",
+    "counter_equip": "Countermeasures Equipment",
+    "greeting": "Greeting, We are ZEEWIND",
+    "learn_more": "Learn More",
+    "legal": "Legal",
+    "tos": "Terms of use",
     "products": "Products",
+    "recon_module": "Reconnaissance Module",
     "services": "Services",
-    "supports": "Supports"
-  },
-  "products": {
-    "recon_module": "Reconnaissance Modules",
-    "drone": "Drones",
-    "arm01": "ARM-01 Flying-Fish",
+    "supports": "Supports",
     "test": "test placeholder"
   },
-  "services": {},
-  "header": {},
-  "footer": {}
+  "products": {
+    "re1p": "RE-1P",
+    "rce1u": "RCE-1U"
+  }
 }
