@@ -2,7 +2,7 @@ import { Button, Carousel, Hero } from "react-daisyui";
 import { useTranslation } from "react-i18next";
 
 export const Home = () => {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
 
   return (
     <Hero className="dot-background">
