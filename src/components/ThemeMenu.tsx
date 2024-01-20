@@ -1,26 +1,27 @@
-import { useEffect } from "react";
+import { useState } from "react";
+import { useTheme } from "react-daisyui";
 
 export const ThemeMenu = () => {
-  useEffect(() => {
-    if (
-      localStorage.theme === "dark" ||
-      (!("theme" in localStorage) && window.matchMedia("(prefers-color-scheme: dark)").matches)
-    ) {
-      document.documentElement.classList.add("dark");
-    } else {
-      document.documentElement.classList.remove("dark");
-    }
-  });
-
-  // localStorage.removeItem('theme')
+  const [checked, setCheck] = useState(localStorage.theme === "dark");
+  const { setTheme } = useTheme();
+  const sysDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
 
   function handleToggle() {
-    if (localStorage.theme === "light") {
-      localStorage.theme = "dark";
-    } else {
+    if (sysDark) {
+      setTheme("light");
       localStorage.theme = "light";
+      setCheck(false);
+    } else if (localStorage.theme === "dark") {
+      setTheme("light");
+      localStorage.theme = "light";
+      setCheck(false);
+    } else {
+      setTheme("dark");
+      localStorage.theme = "dark";
+      setCheck(true);
     }
   }
+
   return (
     <label className="cursor-pointer grid place-items-center">
       <input
@@ -28,7 +29,7 @@ export const ThemeMenu = () => {
         value="business"
         className="toggle theme-controller bg-base-content row-start-1 col-start-1 col-span-2"
         onChange={handleToggle}
-        // checked={localStorage.theme === "dark" ? false : true}
+        checked={checked}
       />
       <svg
         className="col-start-1 row-start-1 stroke-base-100 fill-base-100"

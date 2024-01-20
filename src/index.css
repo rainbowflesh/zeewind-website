@@ -1,28 +1,8 @@
-:root {
-  --gradient-background: white;
-}
-
-[data-theme="business"] {
-  --dark-background: black;
-}
-
 @media (prefers-color-scheme: light) {
   .line-background {
     background: repeating-linear-gradient(45deg, #fff, #fff 13px, #f2f2f2 13px, #f2f2f2 14px);
     background-attachment: fixed;
   }
-}
-
-[data-theme="dark"] {
-  @media (prefers-color-scheme: dark) {
-    .line-background {
-      background: repeating-linear-gradient(45deg, #000, #000 13px, #020202 13px, #020202 14px);
-      background-attachment: fixed;
-    }
-  }
-}
-
-@media (prefers-color-scheme: light) {
   .dot-background {
     background: linear-gradient(90deg, #fff 21px, transparent 1%) 50%, linear-gradient(#fff 21px, transparent 1%) 50%,
       #000;
@@ -32,6 +12,10 @@
 }
 
 @media (prefers-color-scheme: dark) {
+  .line-background {
+    background: repeating-linear-gradient(45deg, #000, #000 13px, #c3c3c300 13px, #c1c1c136 14px);
+    background-attachment: fixed;
+  }
   .dot-background {
     background: linear-gradient(90deg, #000 21px, transparent 1%) 50%, linear-gradient(#000 21px, transparent 1%) 50%,
       #fff;

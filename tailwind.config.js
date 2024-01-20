@@ -35,10 +35,5 @@ export default {
     themes: ["corporate", "business"],
     darkTheme: "business",
     darkMode: "class",
-    base: true,
-    styled: true,
-    utils: true,
-    prefix: "",
-    themeRoot: ":root",
   },
 };
