@@ -44,7 +44,8 @@ export default function ContactForm() {
             <span className="label-text">{t("string.ur_msg")}</span>
           </div>
           <Textarea
-            className="textarea-primary textarea textarea-bordered textarea-lg w-full max-w-xs"
+            className="textarea-primary textarea textarea-bordered textarea-lg text-xs w-full max-w-xs"
+            placeholder={t("string.ur_msg_placeholder")}
             name="message"
           />
         </label>

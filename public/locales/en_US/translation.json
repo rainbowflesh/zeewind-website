@@ -22,6 +22,7 @@
     "learn_more": "Learn More",
     "legal": "Legal",
     "legals": "Legals",
+    "or": "Or",
     "product_catalog": "Product Catalog",
     "product_list": "Product List",
     "product": "Product",
@@ -39,6 +40,7 @@
     "wechat": "WeChat",
     "ur_email": "Your Email",
     "ur_msg": "Your Message",
+    "ur_msg_placeholder": "Leave anything you want to know",
     "first_name": "First Name",
     "last_name": "Last Name",
     "phone": "Phone"
@@ -78,7 +80,22 @@
     "working_temp": "-20℃~50℃ / -4℉~122℉"
   },
   "mention": {
-    "rce1u": "We have fully test on DJI [Avatar, FPV, Mavic, Mavic Air, Mavic Mini, Mavic Phantom, Mavic Spark] and Parrot [ANAFI, Bebop, Bebop 2 Power]. Theoretically, this type of radio jamming weapon can attack most of the device including but not limited to [ground drones, mobile phones, remote controller (ground station), etc...].",
-    "interesting": "We also have a cyberattack device under development, witch can hackin those type of drone and gain control permission. Check our [article](link) for more details."
+    "rce1u": "We have fully test on DJI [Avatar, FPV, Mavic, Mavic Air, Mavic Mini, Mavic Phantom, Mavic Spark] and Parrot [ANAFI, Bebop, Bebop 2 Power]. Theoretically, this type of radio jamming device can effect to most of the devices including but not limited to [UAV, ground drones, mobile phones, remote controller (ground station), etc...]."
+  },
+  "about": {
+    "q_who": "What are we?",
+    "a_who": "We are a corp, made with a couple of scientist, a couple of genies engineers, and one part time designer.",
+    "q_where": "Where are we?",
+    "a_where": "We're working remotely, so we're everywhere?",
+    "": ""
+  },
+  "learn_more": {
+    "q_what": "What is CUAS device?",
+    "a_what": "CUAS is type of device which dedicated to defense unmaned-vehicle invasion, or a more radical approach: they attack.",
+    "q_what_zeewind_provide": "What services or products does ZEEWIND provide?",
+    "a_what_zeewind_provide": "We are providing integrated detection and countermeasures equipment, aka \"AiO CUAS Device\" RCE-1U; Zeewind's philosophy is different from the common products on the market that focus on defense. We prefer to take the initiative.",
+    "interesting": "We also have a cyberattack device under development, witch can hacking those type of drone and gain control permission. Check our [article](link) for more details.",
+    "q_scenarios": "What are the application scenarios for this type of product?",
+    "a_scenarios": "Applicable to the radio monitoring, low-altitude airspace safety prevention & control in locations of government and military organs, industry base, power plant, airport, border customs and coastal defense, etc. Or simply, applicable to any no-drone zone."
   }
 }

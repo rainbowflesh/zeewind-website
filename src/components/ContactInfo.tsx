@@ -9,8 +9,8 @@ export const ContactInfo = () => {
       <Hero.Content className="text-center">
         <div className="max-w-md">
           <h1 className="text-4xl font-bold mt-2 mb-2">{t("string.contact_us")}</h1>
-          <div className="flex flex-col w-full border-opacity-50 ">
-            <Card className="grid rounded-box place-items-center  dark:bg-base-100">
+          <div className="flex flex-col w-full border-opacity-50">
+            <Card className="grid rounded-box place-items-center dark:bg-base-100">
               <div className="grid grid-cols-2 gap-4">
                 <div className="mb-4">
                   <p className="font-bold">{t("string.email")}:</p>
@@ -50,7 +50,7 @@ export const ContactInfo = () => {
                 </div>
               </div>
             </Card>
-            <Divider className="dark:text-white ">Or</Divider>
+            <Divider className="dark:text-white ">{t("string.or")}</Divider>
             <Card className="grid rounded-box place-items-center">
               <h1 className="text-3xl font-bold mt-2 mb-2">{t("string.leave_ur_contact")}</h1>
               <ContactForm />
