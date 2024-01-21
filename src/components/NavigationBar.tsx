@@ -45,7 +45,7 @@ export const NavigationBar = () => {
             >
               <details open={isProductMenuOpen}>
                 <summary>{t("string.products")}</summary>
-                <ul id="navbar-dropdown1" className="bg-slate-50">
+                <ul id="navbar-dropdown1" className="bg-slate-50 dark:bg-base-300">
                   <li>
                     {t("string.recon_module")}
                     <ul>
@@ -61,9 +61,9 @@ export const NavigationBar = () => {
             </Menu.Item>
           </Menu>
           <Menu horizontal={true}>
-            <Menu.Item className="relative">
+            {/* <Menu.Item className="relative">
               <Link to={"/consult"}>{t("string.consult")}</Link>
-            </Menu.Item>
+            </Menu.Item> */}
             <Menu.Item className="relative">
               <Link to={"/contact"} className="ghost rounded">
                 {t("string.contact")}
@@ -88,7 +88,7 @@ export const NavigationBar = () => {
         <Dropdown className="flex items-center gap-4">
           <div className="block md:hidden">
             <Dropdown.Toggle className="btn btn-ghost rounded-btn" button={false}>
-              <button className="rounded bg-gray-100 p-2 text-gray-600 transition hover:text-gray-600/75">
+              <button className="rounded bg-gray-100 dark:bg-base-200 p-2 text-gray-600 transition hover:text-gray-600/75">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   className="h-5 w-5"

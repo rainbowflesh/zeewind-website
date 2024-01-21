@@ -1,32 +1,25 @@
 import { Hero, Stack } from "react-daisyui";
+import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 
 export const ProductIndex = () => {
+  const { t } = useTranslation();
   return (
-    <Hero>
+    <Hero className="dot-background">
       <Hero.Content className="text-center">
         <div className="max-w-md">
-          <h1 className="text-5xl font-bold">Hello there</h1>
-          <p className="py-6">
-            Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In
-            deleniti eaque aut repudiandae et a id nisi.
-          </p>
-          <Stack>
-            <img
-              src="https://daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.jpg"
-              alt="Image 1"
-              className="rounded ml-1"
-            />
-            <img
-              src="https://daisyui.com/images/stock/photo-1565098772267-60af42b81ef2.jpg"
-              alt="Image 2"
-              className="rounded"
-            />
-            <img
-              src="https://daisyui.com/images/stock/photo-1572635148818-ef6fd45eb394.jpg"
-              alt="Image 3"
-              className="rounded"
-            />
-          </Stack>
+          <h1 className="text-5xl font-bold">{t("string.product_catalog")}</h1>
+          <div className="product-list flex flex-wrap">
+            <div className="product-list-item rce1u">
+              <p className="py-6">{t("products.rce1u_describe_short")}</p>
+              <Link to="/products/rce1u">
+                <Stack>
+                  <img src="public/images/rce1u/front2.jpg" alt="Image 1" className="rounded ml-1" />
+                  <img src="public/images/rce1u/front1.jpg" alt="Image 2" className="rounded" />
+                </Stack>
+              </Link>
+            </div>
+          </div>
         </div>
       </Hero.Content>
     </Hero>

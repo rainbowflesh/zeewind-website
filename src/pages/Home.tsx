@@ -1,5 +1,6 @@
 import { Button, Carousel, Hero } from "react-daisyui";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 
 export const Home = () => {
   const { t } = useTranslation();
@@ -19,22 +20,28 @@ export const Home = () => {
             );
           }}
         >
-          <Carousel.Item alt="new-showcase" src="images/placeholder_KalebKendall.jpg" />
-          <Carousel.Item alt="new-showcase" src="images/skye-studios-rjmSbF6TQvQ-unsplash.jpg" />
+          <Carousel.Item alt="product showcase front" src="public/images/rce1u/preview1.png" />
+          <Carousel.Item alt="product showcase back" src="public/images/rce1u/back.jpg" />
+          <Carousel.Item alt="product showcase front" src="public/images/rce1u/front.jpg" />
+          <Carousel.Item alt="product showcase back" src="public/images/rce1u/back1.jpg" />
         </Carousel>
         <div className="w-full sm:w-1/3">
           <article className="text-wrap">
             <h1 className="text-5xl font-bold">{t("string.greeting")}</h1>
             <p
               id="company-introduce"
-              className="company-introduce py-6 bg-slate-50 dark:bg-slate-800 rounded-box mt-2 mb-2 text-balance"
+              className="company-introduce py-6 bg-slate-50 dark:bg-base-200 rounded-box mt-2 mb-2 text-balance"
             >
               {t("string.company_introduce")}
             </p>
           </article>
           <div>
-            <Button className="mr-8">{t("string.learn_more")}</Button>
-            <Button color="neutral">{t("string.buy_now")}</Button>
+            <Button className="mr-8">
+              <Link to="/learn_more">{t("string.learn_more")}</Link>
+            </Button>
+            <Button color="neutral">
+              <Link to="/contact">{t("string.buy_now")}</Link>
+            </Button>
           </div>
         </div>
       </Hero.Content>
