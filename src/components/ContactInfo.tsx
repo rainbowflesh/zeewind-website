@@ -1,4 +1,4 @@
-import { Card, Divider, Dropdown, Hero, Tooltip } from "react-daisyui";
+import { Card, Divider, Dropdown, Hero } from "react-daisyui";
 import { useTranslation } from "react-i18next";
 import ContactForm from "./ContactForm";
 
@@ -43,7 +43,7 @@ export const ContactInfo = () => {
                         </svg>
                       </Dropdown.Toggle>
                       <Dropdown.Menu className="card compact w-16 !p-0 shadow bg-base-100 dark:bg-base-300 rounded-box">
-                        <img src="/public/images/Untitled.png" className="size-16" />
+                        <img src="/images/Untitled.png" className="size-16" />
                       </Dropdown.Menu>
                     </Dropdown>
                   </p>

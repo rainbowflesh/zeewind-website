@@ -20,10 +20,10 @@ export const Home = () => {
             );
           }}
         >
-          <Carousel.Item alt="product showcase front" src="public/images/rce1u/preview1.png" />
-          <Carousel.Item alt="product showcase back" src="public/images/rce1u/back.jpg" />
-          <Carousel.Item alt="product showcase front" src="public/images/rce1u/front.jpg" />
-          <Carousel.Item alt="product showcase back" src="public/images/rce1u/back1.jpg" />
+          <Carousel.Item alt="product showcase front" src="/images/rce1u/preview1.png" />
+          <Carousel.Item alt="product showcase back" src="images/rce1u/back.jpg" />
+          <Carousel.Item alt="product showcase front" src="images/rce1u/front.jpg" />
+          <Carousel.Item alt="product showcase back" src="images/rce1u/back1.jpg" />
         </Carousel>
         <div className="w-full sm:w-1/3">
           <article className="text-wrap">

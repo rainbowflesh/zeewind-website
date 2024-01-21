@@ -14,8 +14,8 @@ export const ProductIndex = () => {
               <p className="py-6">{t("products.rce1u_describe_short")}</p>
               <Link to="/products/rce1u">
                 <Stack>
-                  <img src="public/images/rce1u/front2.jpg" alt="Image 1" className="rounded ml-1" />
-                  <img src="public/images/rce1u/front1.jpg" alt="Image 2" className="rounded" />
+                  <img src="images/rce1u/front2.jpg" alt="Image 1" className="rounded ml-1" />
+                  <img src="images/rce1u/front1.jpg" alt="Image 2" className="rounded" />
                 </Stack>
               </Link>
             </div>

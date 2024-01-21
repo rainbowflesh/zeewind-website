@@ -37,19 +37,16 @@ export const RCE1U = () => {
         </div>
         <div className="grid grid-cols-2 gap-4 sm:gap-6 lg:gap-8">
           <img
-            src="/public/images/rce1u/front1.jpg"
+            src="/images/rce1u/front1.jpg"
             className="product-detail-img-p1 rounded-lg bg-gray-100 dark:bg-base-200"
           />
           <img
-            src="/public/images/rce1u/front.jpg"
+            src="/images/rce1u/front.jpg"
             className="product-detail-img-p2 rounded-lg bg-gray-100 dark:bg-base-200"
           />
+          <img src="/images/rce1u/back.jpg" className="product-detail-img-p3 rounded-lg bg-gray-100 dark:bg-base-200" />
           <img
-            src="/public/images/rce1u/back.jpg"
-            className="product-detail-img-p3 rounded-lg bg-gray-100 dark:bg-base-200"
-          />
-          <img
-            src="/public/images/rce1u/preview.jpg"
+            src="/images/rce1u/preview.jpg"
             className="product-detail-img-p4 rounded-lg bg-gray-100 dark:bg-base-200 -mt-24"
           />
         </div>
