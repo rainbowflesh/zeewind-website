@@ -35,21 +35,21 @@ export const I18nMenu = () => {
             i18n.changeLanguage("ch-ZH");
           }}
         >
-          中文
+          中文 WIP
         </Dropdown.Item>
         <Dropdown.Item
           onClick={() => {
             i18n.changeLanguage("ru_RU");
           }}
         >
-          Русский
+          Русский WIP
         </Dropdown.Item>
         <Dropdown.Item
           onClick={() => {
             i18n.changeLanguage("jp_JP");
           }}
         >
-          日本語
+          日本語 WIP
         </Dropdown.Item>
       </Dropdown.Menu>
     </Dropdown>
