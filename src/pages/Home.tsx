@@ -37,7 +37,7 @@ export const Home = () => {
           </article>
           <div>
             <Button className="mr-8">
-              <Link to="/learnmore">{t("string.learn_more")}</Link>
+              <Link to="/products">{t("string.learn_more")}</Link>
             </Button>
             <Button color="neutral">
               <Link to="/contact">{t("string.buy_now")}</Link>

@@ -8,4 +8,11 @@ export default defineConfig({
       strict: false,
     },
   },
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks: undefined,
+      },
+    },
+  },
 });
