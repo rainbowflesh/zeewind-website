@@ -42,14 +42,14 @@ export const I18nMenu = () => {
             i18n.changeLanguage("ru_RU");
           }}
         >
-          Русский WIP
+          Русский
         </Dropdown.Item>
         <Dropdown.Item
           onClick={() => {
-            i18n.changeLanguage("jp_JP");
+            i18n.changeLanguage("ja_JP");
           }}
         >
-          日本語 WIP
+          日本語
         </Dropdown.Item>
       </Dropdown.Menu>
     </Dropdown>

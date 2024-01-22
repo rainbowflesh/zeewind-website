@@ -32,6 +32,7 @@ export const Home = () => {
               id="company-introduce"
               className="company-introduce py-6 bg-slate-50 dark:bg-base-200 rounded-box mt-2 mb-2 text-balance"
             >
+              <span className="text-stone-600 dark:text-stone-400">{t("string.company_name_short")}</span>{" "}
               {t("string.company_introduce")}
             </p>
           </article>
