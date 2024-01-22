@@ -75,11 +75,11 @@
     "dimensions": "300 * 204 * 410 мм / 14\"",
     "jamming_freq": "2.4ГГц / 5.8ГГц",
     "jamming_radius": "Максимальный радиус: ≥ 1000м",
-    "power_source": "DC 36В",
+    "power_source": "DC 36V",
     "protect_level": "IP65",
     "system_upgrade": "OTA / LAN",
     "tdp": "99 Вт",
-    "weight": "1100 г / 2,42 фунта",
+    "weight": "1100 g / 2,42 фунта",
     "work_method": "Направленное радио-помехи",
     "working_temp": "-20℃~50℃ / -4℉~122℉"
   },

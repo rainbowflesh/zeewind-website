@@ -74,7 +74,7 @@
     "dimensions": "300 * 204 * 410 mm / 14寸 ",
     "jamming_freq": "2.4GHz / 5.8GHz",
     "jamming_radius": "最大距离: ≥ 1000m",
-    "power_source": "DC 36v",
+    "power_source": "DC 36V",
     "protect_level": "IP65",
     "system_upgrade": "OTA / LAN",
     "tdp": "99瓦",
