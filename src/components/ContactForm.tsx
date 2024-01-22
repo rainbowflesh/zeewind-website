@@ -12,32 +12,37 @@ export default function ContactForm() {
             <div className="label">
               <span className="label-text">{t("string.first_name")}</span>
             </div>
-            <input name="message" type="text" className="input input-bordered w-full max-w-xs" />
+            <input name="message" type="text" className="input input-bordered w-full text-xs max-w-xs" />
           </label>
           <label>
             <div className="label">
               <span className="label-text">{t("string.last_name")}</span>
             </div>
-            <input name="message" type="text" className="input input-bordered w-full max-w-xs" />
+            <input name="message" type="text" className="input input-bordered w-full text-xs max-w-xs" />
           </label>
         </div>
         <label>
           <div className="label">
             <span className="label-text">{t("string.company")}</span>
           </div>
-          <input name="message" type="text" className="input input-bordered w-full max-w-xs" />
+          <input name="message" type="text" className="input input-bordered w-full text-xs max-w-xs" />
         </label>
         <label>
           <div className="label">
             <span className="label-text">{t("string.email")}</span>
           </div>
-          <input type="email" name="email" className="textarea-primary input input-bordered w-full max-w-xs" />
+          <input
+            type="email"
+            name="email"
+            className="textarea-primary input text-xs input-bordered w-full max-w-xs"
+            placeholder={t("string.required")}
+          />
         </label>
         <label>
           <div className="label">
             <span className="label-text">{t("string.phone")}</span>
           </div>
-          <input name="message" type="text" className="input input-bordered w-full max-w-xs" />
+          <input name="message" type="text" className="input input-bordered w-full text-xs max-w-xs" />
         </label>
         <label>
           <div className="label">
