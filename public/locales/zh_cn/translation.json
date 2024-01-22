@@ -14,6 +14,7 @@
     "contact": "联系方式",
     "contacts": "联系方式",
     "contact_us": "联系我们",
+    "contact_us_mention": "我们会在三个工作日内回复您.",
     "leave_ur_contact": "提供您的联系方式",
     "counter_equip": "反制设备",
     "email_value": "zhaopenggong@163.com",
@@ -40,7 +41,7 @@
     "wechat": "微信",
     "ur_email": "您的电子邮箱",
     "ur_msg": "咨询内容",
-    "ur_msg_placeholder": "请输入您想了解的任何内容",
+    "ur_msg_placeholder": "告诉我们您想了解的任何内容",
     "first_name": "姓",
     "last_name": "名",
     "phone": "电话"
