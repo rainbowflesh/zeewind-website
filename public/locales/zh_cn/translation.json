@@ -11,19 +11,22 @@
     "company": "公司",
     "consult": "咨询",
     "consults": "咨询信息",
+    "contact_us_mention": "我们会在三个工作日内回复您.",
+    "contact_us": "联系我们",
     "contact": "联系方式",
     "contacts": "联系方式",
-    "contact_us": "联系我们",
-    "contact_us_mention": "我们会在三个工作日内回复您.",
-    "leave_ur_contact": "提供您的联系方式",
     "counter_equip": "反制设备",
-    "email_value": "zhaopenggong@163.com",
+    "email_value": "15311257582@163.com",
     "email": "Email",
+    "first_name": "姓",
     "greeting": "你好, 我们是 ZEEWIND",
+    "last_name": "名",
     "learn_more": "了解更多",
+    "leave_ur_contact": "提供您的联系方式",
     "legal": "法律",
     "legals": "法律信息",
     "or": "或者",
+    "phone": "电话",
     "product_catalog": "产品目录",
     "product_list": "产品列表",
     "product": "产品",
@@ -37,14 +40,11 @@
     "tel": "电话",
     "test": "test placeholder",
     "tos": "服务条款",
-    "wechat_value": "zhaopenggong",
-    "wechat": "微信",
     "ur_email": "您的电子邮箱",
-    "ur_msg": "咨询内容",
     "ur_msg_placeholder": "告诉我们您想了解的任何内容",
-    "first_name": "姓",
-    "last_name": "名",
-    "phone": "电话"
+    "ur_msg": "咨询内容",
+    "wechat_value": "zhaopenggong",
+    "wechat": "微信"
   },
   "products": {
     "rce1u_describe_short": "RCE-1U 侦测反制设备",
@@ -81,7 +81,22 @@
     "working_temp": "-20℃~50℃ / -4℉~122℉"
   },
   "mention": {
-    "rce1u": "我们对 DJI [Avatar, FPV, Mavic, Mavic Air, Mavic Mini, Mavic Phantom, Mavic Spark] 和 Parrot [ANAFI, Bebop, Bebop 2 Power] 这些机型进行了完整的测试, 理论上, 本产品的适用范围包括且不限于 [飞行器, 地面载具, 移动电话, 遥控器 (地面站) 等].",
-    "interesting": "We also have a cyberattack device under development, witch can hackin those type of drone and gain control permission. Check our [article](link) for more details."
+    "rce1u": "We have fully test on DJI [Avatar, FPV, Mavic, Mavic Air, Mavic Mini, Mavic Phantom, Mavic Spark] and Parrot [ANAFI, Bebop, Bebop 2 Power]. Theoretically, this type of radio jamming device can effect to most of the devices including but not limited to [UAV, ground drones, mobile phones, remote controller (ground station), etc...]."
+  },
+  "about": {
+    "q_who": "What are we?",
+    "a_who": "We are a corp, made with a couple of scientist, a couple of genies engineers, and one part time designer.",
+    "q_where": "Where are we?",
+    "a_where": "We're working remotely, so we're everywhere?",
+    "": ""
+  },
+  "learn_more": {
+    "q_what": "What is CUAS device?",
+    "a_what": "CUAS is type of device which dedicated to defense unmaned-vehicle invasion, or a more radical approach: they attack.",
+    "q_what_zeewind_provide": "What services or products does ZEEWIND provide?",
+    "a_what_zeewind_provide": "We are providing integrated detection and countermeasures equipment, aka \"AiO CUAS Device\" RCE-1U; Zeewind's philosophy is different from the common products on the market that focus on defense. We prefer to take the initiative.",
+    "interesting": "We also have a cyberattack device under development, witch can hacking those type of drone and gain control permission. Check our [article](link) for more details.",
+    "q_scenarios": "What are the application scenarios for this type of product?",
+    "a_scenarios": "Applicable to the radio monitoring, low-altitude airspace safety prevention & control in locations of government and military organs, industry base, power plant, airport, border customs and coastal defense, etc. Or simply, applicable to any no-drone zone."
   }
 }
