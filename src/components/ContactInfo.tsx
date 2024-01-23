@@ -43,7 +43,7 @@ export const ContactInfo = () => {
                         </svg>
                       </Dropdown.Toggle>
                       <Dropdown.Menu className="card compact w-16 !p-0 shadow bg-base-100 dark:bg-base-300 rounded-box">
-                        <img src="/images/Untitled.png" className="size-16" />
+                        <img src="/images/qrcode.jpg" className="size-16" />
                       </Dropdown.Menu>
                     </Dropdown>
                   </p>
