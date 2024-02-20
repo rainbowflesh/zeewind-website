@@ -1,30 +1,33 @@
-import { Button, Carousel, Hero } from "react-daisyui";
+import { Button, Hero } from "react-daisyui";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
+import Carousel from "nuka-carousel";
 
 export const Home = () => {
   const { t } = useTranslation();
 
   return (
-    <Hero className="dot-background dark:dot-background-dark">
-      <Hero.Content className="text-center flex flex-col sm:flex-row">
-        <Carousel
-          className="rounded-box w-full sm:w-2/3 max-w-10/12 snap-center place-items-center"
-          display="sequential"
-          snap="center"
-          buttonStyle={(value) => {
-            return (
-              <Button className="backdrop-blur-sm hover:backdrop-blur-lg" color="neutral" shape={"circle"}>
-                {value}
-              </Button>
-            );
-          }}
-        >
-          <Carousel.Item alt="product showcase front" src="/images/rce1u/preview1.png" />
-          <Carousel.Item alt="product showcase back" src="images/rce1u/back.jpg" />
-          <Carousel.Item alt="product showcase front" src="images/rce1u/front.jpg" />
-          <Carousel.Item alt="product showcase back" src="images/rce1u/back1.jpg" />
-        </Carousel>
+    <Hero className="dot-background dark:dot-background-dark h-dvh">
+      <Hero.Content className="text-center flex flex-col sm:flex-row -mt-16">
+        <div className="rounded-box w-full sm:w-2/3 max-w-10/12 snap-center place-items-center">
+          <Carousel
+            autoplay
+            autoplayInterval={5000}
+            wrapAround
+            cellAlign={"center"}
+            defaultControlsConfig={{
+              nextButtonClassName: "btn btn-circle mr-4 backdrop-blur-lg",
+              nextButtonText: "❯",
+              prevButtonClassName: "btn btn-circle ml-4 backdrop-blur-lg",
+              prevButtonText: "❮",
+              pagingDotsClassName: "mr-1 ml-1 backdrop-blur-lg",
+            }}
+            className="rounded-box  h-128"
+          >
+            <img className="bg-center bg-cover m-auto" src="/images/rce1u/cover.png" />
+            <img className="bg-center bg-cover m-auto" src="/images/rce1u/back.jpg" />
+          </Carousel>
+        </div>
         <div className="w-full sm:w-1/3">
           <article className="text-wrap">
             <h1 className="text-5xl font-bold">{t("string.greeting")}</h1>
@@ -38,7 +41,7 @@ export const Home = () => {
           </article>
           <div>
             <Button className="mr-8">
-              <Link to="/products">{t("string.learn_more")}</Link>
+              <Link to="/product/cuas">{t("string.learn_more")}</Link>
             </Button>
             <Button color="neutral">
               <Link to="/contact">{t("string.buy_now")}</Link>

@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import { ContactInfo } from "../../components/ContactInfo";
 
 export const RCE1U = () => {
   const { t } = useTranslation();
@@ -24,7 +25,7 @@ export const RCE1U = () => {
             <h2 className="text-3xl font-bold tracking-tight text-gray-900 dark:text-gray-50 sm:text-4xl">
               Technical Specifications
             </h2>
-            <p className="mt-4 text-gray-500 dark:text-gray-400 ">{t("products.rce1u_describe")}</p>
+            <p className="mt-4 text-gray-500 dark:text-gray-400 ">{t("product.rce1u_describe")}</p>
             <dl className="mt-16 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 sm:gap-y-16 lg:gap-x-8">
               {features.map((feature) => (
                 <div key={feature.name} className="border-t border-gray-200 pt-4">
@@ -41,13 +42,16 @@ export const RCE1U = () => {
             className="product-detail-img-p1 rounded-lg bg-gray-100 dark:bg-base-200"
           />
           <img
-            src="/images/rce1u/front.jpg"
-            className="product-detail-img-p2 rounded-lg bg-gray-100 dark:bg-base-200"
+            src="/images/rce1u/back1.jpg"
+            className="product-detail-img-p2 rounded-lg bg-gray-100 dark:bg-base-200 m-auto "
           />
-          <img src="/images/rce1u/back.jpg" className="product-detail-img-p3 rounded-lg bg-gray-100 dark:bg-base-200" />
           <img
-            src="/images/rce1u/preview.jpg"
-            className="product-detail-img-p4 rounded-lg bg-gray-100 dark:bg-base-200 -mt-24"
+            src="/images/rce1u/back.jpg"
+            className="product-detail-img-p3 rounded-lg bg-gray-100 dark:bg-base-200 m-auto"
+          />
+          <img
+            src="/images/rce1u/front2.jpg"
+            className="product-detail-img-p4 rounded-lg bg-gray-100 dark:bg-base-200"
           />
         </div>
         <p className="text-xs text-balance bg-white dark:bg-black rounded-box">* {t("mention.rce1u")}</p>

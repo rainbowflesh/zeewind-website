@@ -1,18 +1,19 @@
 import { Footer } from "react-daisyui";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
+import { LogoDark } from "./Logos";
 
 export const FooterBar = () => {
   const { t } = useTranslation();
   return (
     <Footer className="p-10 bg-neutral text-neutral-content">
       <div>
-        <Footer.Title>{t("string.services")}</Footer.Title>
-        <Link to={"/products"} className="link link-hover">
-          {t("string.products")}
+        <Footer.Title>{t("string.product")}</Footer.Title>
+        <Link to={"/product/cuas"} className="link link-hover">
+          {t("string.recon_module")}
         </Link>
-        <Link to={"/consult"} className="link link-hover">
-          {t("string.consult")}
+        <Link to={"/product/uav"} className="link link-hover">
+          {t("string.uav")}
         </Link>
       </div>
       <div>
@@ -30,6 +31,7 @@ export const FooterBar = () => {
           {t("string.tos")}
         </Link>
       </div>
+      <LogoDark />
     </Footer>
   );
 };

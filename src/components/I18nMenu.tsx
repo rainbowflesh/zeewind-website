@@ -3,7 +3,6 @@ import { useTranslation } from "react-i18next";
 
 export const I18nMenu = () => {
   const { i18n } = useTranslation();
-
   return (
     <Dropdown className="flex items-center gap-4">
       <Dropdown.Toggle button={false}>

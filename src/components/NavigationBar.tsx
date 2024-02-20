@@ -1,39 +1,31 @@
 import { useState } from "react";
-import { Button, Dropdown, Menu, Navbar } from "react-daisyui";
+import { Dropdown, Menu, Navbar } from "react-daisyui";
 import { useTranslation } from "react-i18next";
 import { Link, useNavigate } from "react-router-dom";
 import { I18nMenu } from "./I18nMenu";
 import { ThemeMenu } from "./ThemeMenu";
+import { LogoLight } from "./Logos";
 
 export const NavigationBar = () => {
   const { t } = useTranslation();
+  const navigate = useNavigate();
   const [isProductMenuOpen, setOpenProductMenu] = useState(false);
 
   let productMenuTimer: number = 0;
-
   const handleProductMenuMouseEnter = () => {
     clearTimeout(productMenuTimer);
     setOpenProductMenu(true);
   };
-
   const handleProductMenuMouseLeave = () => {
     productMenuTimer = window.setTimeout(() => {
       setOpenProductMenu(false);
     }, 600);
   };
-  const navigate = useNavigate();
+
   return (
     <Navbar className="line-background px-2 font-sans bg-base-300 rounded-box border-2 mx-auto max-w-screen-xl sm:px-6 lg:px-8 h-4">
       <Navbar.Start className="flex flex-wrap md:flex-wrap-reverse truncate">
-        <Link to="/">
-          <Button className="text-xl text-left normal-case md:flex md:items-center" color="ghost">
-            <img src="/favicon.svg" className="size-12 left-1 mr-auto text-left " />
-            <div className="flex flex-col ml-1">
-              <span className={"self-start"}>{t("string.company_name_short")}</span>
-              <span className="text-sm font-light block -mt-1">{t("string.company_slogan")}</span>
-            </div>
-          </Button>
-        </Link>
+        <LogoLight />
       </Navbar.Start>
       <Navbar.Center className="flex  flex-wrap md:flex-wrap-reverse h-16 items-center justify-between  z-50">
         <div className="hidden md:block" aria-label="Global">
@@ -50,8 +42,23 @@ export const NavigationBar = () => {
                     {t("string.recon_module")}
                     <ul>
                       <li>
-                        <Link className="text-lg" to={"products/rce1u"}>
-                          {t("products.rce1u")}
+                        <Link className="text-lg" to={"/product/cuas/rce1u"}>
+                          {t("product.rce1u")}
+                        </Link>
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    Unmanned Aerial Vehicle
+                    <ul>
+                      <li>
+                        <Link className="text-lg" to={"/product/uav/fpv/7inch"}>
+                          {t("product.fpv_7inch")}
+                        </Link>
+                      </li>
+                      <li>
+                        <Link className="text-lg" to={"/product/uav/fpv/10inch"}>
+                          {t("product.fpv_10inch")}
                         </Link>
                       </li>
                     </ul>
@@ -84,7 +91,6 @@ export const NavigationBar = () => {
         <div className="mr-2">
           <ThemeMenu />
         </div>
-
         <Dropdown className="flex items-center gap-4">
           <div className="block md:hidden">
             <Dropdown.Toggle className="btn btn-ghost rounded-btn" button={false}>

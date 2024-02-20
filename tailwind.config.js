@@ -21,6 +21,10 @@ export default {
         "11/12": "91%",
         "14/15": "94%",
       },
+      spacing: {
+        128: "32rem",
+        256: "64rem",
+      },
     },
     fontFamily: {
       sans: ["Figtree"],
