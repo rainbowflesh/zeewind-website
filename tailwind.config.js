@@ -38,6 +38,5 @@ export default {
   daisyui: {
     themes: ["corporate", "business"],
     darkTheme: "business",
-    darkMode: "class",
   },
 };

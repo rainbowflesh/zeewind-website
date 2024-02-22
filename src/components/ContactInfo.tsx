@@ -89,13 +89,25 @@ export default function ContactForm() {
         </label>
         <label>
           <div className="label">
+            <span className="label-text">{t("string.job_title")}</span>
+          </div>
+          <input name="message" type="text" className="input input-bordered w-full text-xs max-w-xs" />
+        </label>
+        <label>
+          <div className="label">
+            <span className="label-text">{t("string.country")}</span>
+          </div>
+          <input name="message" type="text" className="input input-bordered w-full text-xs max-w-xs" />
+        </label>
+        <label>
+          <div className="label">
             <span className="label-text">{t("string.email")}</span>
           </div>
           <input
             type="email"
             name="email"
             className="textarea-primary input text-xs input-bordered w-full max-w-xs"
-            placeholder={t("string.required")}
+            placeholder={"*" + t("string.required")}
           />
         </label>
         <label>

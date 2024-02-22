@@ -37,9 +37,11 @@ export const NavigationBar = () => {
             >
               <details open={isProductMenuOpen}>
                 <summary>{t("string.products")}</summary>
-                <ul id="navbar-dropdown1" className="bg-slate-50 dark:bg-base-300">
-                  <li>
-                    {t("string.recon_module")}
+                <ul id="navbar-dropdown1" className="bg-slate-50 dark:bg-base-300 items-start min-w-max">
+                  <li className=" items-start ">
+                    <Link className="text-stone-500 dark:text-stone-400" to="/product/cuas">
+                      {t("string.recon_module")}
+                    </Link>
                     <ul>
                       <li>
                         <Link className="text-lg" to={"/product/cuas/rce1u"}>
@@ -49,7 +51,9 @@ export const NavigationBar = () => {
                     </ul>
                   </li>
                   <li>
-                    Unmanned Aerial Vehicle
+                    <Link className="text-stone-500 dark:text-stone-400" to="/product/uav">
+                      Unmanned Aerial Vehicle
+                    </Link>
                     <ul>
                       <li>
                         <Link className="text-lg" to={"/product/uav/fpv/7inch"}>
@@ -87,9 +91,6 @@ export const NavigationBar = () => {
       <Navbar.End className="z-50">
         <div className="mr-4">
           <I18nMenu />
-        </div>
-        <div className="mr-2">
-          <ThemeMenu />
         </div>
         <Dropdown className="flex items-center gap-4">
           <div className="block md:hidden">
