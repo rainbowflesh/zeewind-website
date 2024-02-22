@@ -1,7 +1,6 @@
 import { Footer } from "react-daisyui";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
-import { LogoDark } from "./Logos";
 
 export const FooterBar = () => {
   const { t } = useTranslation();

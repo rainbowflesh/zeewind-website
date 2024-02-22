@@ -3,7 +3,6 @@ import { Dropdown, Menu, Navbar } from "react-daisyui";
 import { useTranslation } from "react-i18next";
 import { Link, useNavigate } from "react-router-dom";
 import { I18nMenu } from "./I18nMenu";
-import { ThemeMenu } from "./ThemeMenu";
 import { LogoLight } from "./Logos";
 
 export const NavigationBar = () => {

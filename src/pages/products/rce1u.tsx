@@ -1,5 +1,4 @@
 import { useTranslation } from "react-i18next";
-import { ContactInfo } from "../../components/ContactInfo";
 
 export const RCE1U = () => {
   const { t } = useTranslation();
